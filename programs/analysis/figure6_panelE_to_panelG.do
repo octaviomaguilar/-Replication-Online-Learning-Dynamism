@@ -19,6 +19,7 @@ global qwi "$data/qwi"
 **(1)**
 *******
 *load QWI data
+/*
 use "$data/bartik/bartik_qwi_earn_fage.dta", clear
 drop earnseps
 gen t = time 
@@ -111,7 +112,7 @@ forval i = 0/5 {
 keep dev_earnbeg* Istate Inaics4 Inaics2_time time bartik
 
 save "$data/bartik/bartik_qwi_earn_fage_trimmed.dta", replace
-
+*/
 *********
 **(2.0)**
 *********
