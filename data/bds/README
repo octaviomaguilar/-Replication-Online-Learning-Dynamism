@@ -1,0 +1,9 @@
+This folder contains all the Business Dynamics Statistics (BDS) data. I do not include the raw BDS data files due to its large size. Instead, I include trimmed versions of the data. 
+If you wish to pull the raw data please visit the BDS website: https://www.census.gov/data/datasets/time-series/econ/bds/bds-datasets.html 
+You will need to extract the following datasets from the website: 
+1. Sector by Firm Age Coarse
+2. Sector by Firm Age
+3. Sector by Firm Size
+4. 4-digit NAICS by Firm Age Coarse
+
+Once you extract the raw data please place them into this BDS folder and save as a CSV. 
