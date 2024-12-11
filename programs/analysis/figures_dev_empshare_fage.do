@@ -19,6 +19,7 @@ global qwi "$data/qwi"
 **(1)**
 *******
 *load QWI firm size data:
+/*
 use "$data/bartik/bartik_state_naics4_fage.dta", clear
 gen t = time 
 format t %tq
@@ -89,7 +90,7 @@ forval i = 0/5 {
 
 keep dev_emp_share* Istate Inaics4 Inaics2_time time bartik
 save "$data/bartik/bartik_state_naics4_fage_trimmed.dta", replace
-
+*/
 *******
 **(2)**
 *******
