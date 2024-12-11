@@ -13,7 +13,7 @@ global figures "$home/figures"
 *********
 ***(1)***
 *********
-
+/*
 *1: Load BDS data
 import delimited using "$data/bds/bds2021_vcn4_fac.csv", clear
 
@@ -90,6 +90,7 @@ replace sec = "48-49" if inlist(sec,"48","49")
 egen Isec_t = group(sec t)
 
 save "$data/bds/bds2021_vcn4_fac_trimmed.dta", replace 
+*/
 *********
 ***(3)***
 *********
