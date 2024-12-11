@@ -80,10 +80,13 @@ gen post = t >= `base'
 
 egen Inaics2 = group(naics2)
 
+save "$bds/bds2021_sec_fa_trimmed.dta", replace
 *********
 ***(4)***
 *********
 *figure 4 panel D: 
+use "$bds/bds2021_sec_fa_trimmed.dta", clear
+
 keep if fageg == 11
 reghdfe emp_share bartik_z*, absorb(i.Inaics2 i.t) vce(cluster t Inaics2)
 

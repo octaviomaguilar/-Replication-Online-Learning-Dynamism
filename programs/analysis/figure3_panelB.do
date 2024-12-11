@@ -12,6 +12,7 @@ global figures "$home/figures"
 *********
 ***(1)***
 *********
+
 import delimited using "$data/bfs/bfs_naics3.csv", clear
 
 * 1.1 Data Transformation Steps

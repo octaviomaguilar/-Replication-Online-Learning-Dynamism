@@ -151,9 +151,12 @@ gen log_entry = ln(estabs_entry)
 egen isector = group(industry)
 egen itime = group(year)
 
+save "$bds/bds2021_sec_fac_trimmed.dta", replace
+
 ***********
 ***(2.3)***
 ***********
+use "$bds/bds2021_sec_fac_trimmed.dta", clear
 *pre-pandemic sample: all obs; Table 2 column 2 Panel A
 qui reghdfe log_entry online_educ_rate L(1/2).log_entry if year >= 2003 & year <= 2019, absorb(isector itime) 
 estadd local secFE Y

@@ -107,9 +107,15 @@ forval i = 0/5 {
 	drop if dev_earnbeg`i' > 1.10
 }
 
+keep dev_earnbeg* Istate Inaics4 Inaics2_time time bartik
+
+save "$data/bartik/bartik_qwi_earn_fsize_trimmed.dta", replace
+
 *******
 **(2)**
 *******
+use "$data/bartik/bartik_qwi_earn_fsize_trimmed.dta", clear
+
 *Figure 6 panel A: deviation in average monthly earnings for firm with 0-19 employees:
 qui reghdfe dev_earnbeg1 ib239.t##c.bartik, absorb(i.Istate i.Inaics4 i.Inaics2_time) vce(cluster Inaics4 time)
 

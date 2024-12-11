@@ -87,12 +87,17 @@ forval i = 0/5 {
 	gen dev_emp_share`i' = emp_share`i' - emp_share`i'_2019
 }
 
-*Block 2 produces figure 4 panel B
-*Block 3-3.1 produces figure 5 Panels C and D. 
+keep dev_emp_share* Istate Inaics4 Inaics2_time time bartik
+save "$data/bartik/bartik_state_naics4_fage_trimmed.dta", replace
 
 *******
 **(2)**
 *******
+*Block 2 produces figure 4 panel B
+*Block 3-3.1 produces figure 5 Panels C and D. 
+
+use "$data/bartik/bartik_state_naics4_fage_trimmed.dta", clear
+
 *Figure 4 Panel B: Deviation in employment share for firms that are aged 11+
 qui reghdfe dev_emp_share5 ib239.t##c.bartik, absorb(i.Istate i.Inaics4 i.Inaics2_time) vce(cluster Inaics4 time)
 

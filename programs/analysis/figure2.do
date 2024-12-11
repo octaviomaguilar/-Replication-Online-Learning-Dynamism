@@ -94,5 +94,3 @@ twoway (scatter change_birth_pre change_educ_pre, mcolor(gray) msymbol(circle)) 
         xtitle("Online Learning Rate Changes (p.p.)") ytitle("Entry Changes (%)") ///
 	legend(order(1 "pre-pandemic" 2 "full sample"))
 	graph export "$figures/figure2.eps", replace
-
-

@@ -13,6 +13,7 @@ global figures "$home/figures"
 *********
 ***(1)***
 *********
+
 *1: Load BDS data
 import delimited using "$data/bds/bds2021_vcn4_fac.csv", clear
 
@@ -88,9 +89,12 @@ replace sec = "44-45" if inlist(sec,"44","45")
 replace sec = "48-49" if inlist(sec,"48","49")
 egen Isec_t = group(sec t)
 
+save "$data/bds/bds2021_vcn4_fac_trimmed.dta", replace 
 *********
 ***(3)***
 *********
+use "$data/bds/bds2021_vcn4_fac_trimmed.dta", clear
+
 *3.1: run event study of bartik on startup entry rate, and plot the point estimates.
 reghdfe entryrate bartik_z*, absorb(i.Isec_t i.Inaics4) vce(cluster t Inaics4)
 
