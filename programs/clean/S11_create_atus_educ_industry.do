@@ -50,6 +50,9 @@ format qtr %tq
 tostring ind_cps8, gen(naics)
 drop if naics ==  "99999"
 
+*1.7.1: save as raw atus data: 
+save "$atus/raw_atus.dta", replace
+
 *1.8: merge in ATUS census industry coding to NAICS
 merge m:1 naics using "$crosswalks/atus_to_supersec.dta", keep(3) nogen
 replace naics2 = substr(naics2,1,2)
