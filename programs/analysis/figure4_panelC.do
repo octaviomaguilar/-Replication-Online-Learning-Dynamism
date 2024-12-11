@@ -14,6 +14,7 @@ global figures "$home/figures"
 ***(1)***
 *********
 *load BDS firm size data
+/*
 import delimited using "$bds/bds2021_sec_fz.csv", clear
 
 /* Cleaning */
@@ -73,7 +74,7 @@ gen post = t >= `base'
 egen Inaics2 = group(naics2)
 
 save "$bds/bds2021_sec_fz_trimmed.dta", replace
-
+*/
 *********
 ***(4)***
 *********
