@@ -1,3 +1,4 @@
 This folder contains all the Business Employment Dynamics (BED) data. I do not include the raw BED data file due to its large size. Instead, I include a clean version of the data, "bed_industry.dta". 
 If you wish to pull the raw data please visit the BED website: https://download.bls.gov/pub/time.series/bd/
-You will need to download the following: bd.data.0.Current and place it into this folder. 
+You will need to download the following: bd.data.0.Current 
+It will download as a CURRENT file. This is fine. Once downloaded place it into this folder. 
