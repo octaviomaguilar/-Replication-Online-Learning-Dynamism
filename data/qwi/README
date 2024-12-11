@@ -1,0 +1,40 @@
+This folder should be empty. I do not include the raw QWI files due to its large size. You will need to download the data yourself and place it into this directory. 
+To download the data please visit the QWI LED website: https://ledextract.ces.census.gov/qwi/all
+Here, you will go through 4 iterations: 
+1.) 
+- Geography Level --> Select all 
+- Industry Detail --> 4-digit industries; Other Firm Characteristics --> Firm Age, Private Ownership
+- No Worker Characteristics Detail
+- Indicator Categories --> emp frm* hir* sep*
+- Quarters --> I choose to start from 2017Q1 to present. 
+- Export and save in this folder as "qwi_state_naics4_age.dta"
+
+2.) 
+- Geography Level --> Select all 
+- Industry Detail --> 4-digit industries; Other Firm Characteristics --> Firm Size, Private Ownership
+- No Worker Characteristics Detail
+- Indicator Categories --> emp frm* hir* sep*
+- Quarters --> I choose to start from 2017Q1 to present. 
+- Export and save in this folder as "qwi_state_naics4_size.dta"
+
+3.) 
+- Geography Level --> Select all 
+- Industry Detail --> 4-digit industries; Other Firm Characteristics --> Firm Age, Private Ownership
+- No Worker Characteristics Detail
+- Indicator Categories --> earn*
+- Quarters --> I choose to start from 2017Q1 to present. 
+- Export and save in this folder as "qwi_earn_fage.dta"
+
+4.) 
+- Geography Level --> Select all 
+- Industry Detail --> 4-digit industries; Other Firm Characteristics --> Firm Size, Private Ownership
+- No Worker Characteristics Detail
+- Indicator Categories --> earn*
+- Quarters --> I choose to start from 2017Q1 to present. 
+- Export and save in this folder as "qwi_earn_fsize.dta"
+
+These four datasets will be used in the data cleaning process to create the following datasets in the $Bartik directory: 
+1.) "bartik_state_naics4_fage_trimmed.dta"
+2.) "bartik_state_naics4_fsize_trimmed.dta"
+3.) "bartik_qwi_earn_fage_trimmed.dta"
+4.) "bartik_qwi_earn_fsize_trimmed.dta"
