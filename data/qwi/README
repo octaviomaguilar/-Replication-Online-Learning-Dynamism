@@ -1,5 +1,6 @@
 This folder should be empty. I do not include the raw QWI files due to its large size. You will need to download the data yourself and place it into this directory. 
 To download the data please visit the QWI LED website: https://ledextract.ces.census.gov/qwi/all
+You only need to download the data if you wish to process the code from start to finish. Otherwise, you already have the final datasets created from the QWI.
 Here, you will go through 4 iterations: 
 1.) 
 - Geography Level --> Select all 
