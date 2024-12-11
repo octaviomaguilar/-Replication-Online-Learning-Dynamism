@@ -14,6 +14,7 @@ global figures "$home/figures"
 ***(1)***
 *********
 *load BDS firm age data
+/*
 import delimited using "$bds/bds2021_sec_fa.csv", clear
 
 /* Cleaning */
@@ -81,6 +82,7 @@ gen post = t >= `base'
 egen Inaics2 = group(naics2)
 
 save "$bds/bds2021_sec_fa_trimmed.dta", replace
+*/
 *********
 ***(4)***
 *********
