@@ -14,6 +14,8 @@ global crosswalks "$data/crosswalks"
 global qwi "$data/qwi"
 global programs "$home/programs"
 
+*To run this master file from start to finish you must have ALL the raw data as listed in the README. 
+*If you do not, this master will only run block 2, the analysis. 
 *******
 **(1)**
 *******
