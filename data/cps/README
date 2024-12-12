@@ -1,4 +1,4 @@
-This folder contains the final input "cps_delta_educ.dta", which are the weighted 2-digit occupational shares of online learning in 2019 and 2021 as well as the changes in online learning between the two years. 
+This folder contains the clean data "cps_delta_educ.dta", which are the weighted 2-digit occupational shares of online learning in 2019 and 2021 as well as the changes in online learning between the two years. 
 I do not include the raw CPS data files due to its large size.
 If you wish to download the raw data please visit the CPS-CIS website: https://www.census.gov/data/datasets/time-series/demo/cps/cps-supp_cps-repwgt/cps-computer.html
 Here you will download the 2019 and 2021 supplement as a CSV file. 
