@@ -15,6 +15,7 @@ global bed "$data/bed"
 *******
 **(1)**
 *******
+/*
 /* create ATUS dataset */
 *1.1: load ATUS data:
 use "$atus/atus_00011.dta", clear
@@ -51,8 +52,9 @@ tostring ind_cps8, gen(naics)
 drop if naics ==  "99999"
 
 *1.7.1: save as raw atus data: 
-save "$atus/raw_atus.dta", replace
-
+save "$atus/atus_trimmed.dta", replace
+*/
+use  "$atus/atus_trimmed.dta", clear
 *1.8: merge in ATUS census industry coding to NAICS
 merge m:1 naics using "$crosswalks/atus_to_supersec.dta", keep(3) nogen
 replace naics2 = substr(naics2,1,2)
