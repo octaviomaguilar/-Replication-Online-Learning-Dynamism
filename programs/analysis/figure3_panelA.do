@@ -27,10 +27,10 @@ tostring vcnaics4, gen(naics4)
 gen firm_age_zero=0
 replace firm_age_zero=1 if fage=="a) 0"
 
-*1.3: calculate the number of firms aged zero (startups) by year-naics4
+*1.3.1: calculate the number of firms aged zero (startups) by year-naics4
 egen nfirms_age0 = sum(firms) if firm_age_zero==1, by(year naics4)
 
-*1.3: calculate the total number of firms by year-naics4
+*1.3.2: calculate the total number of firms by year-naics4
 egen nfirms = sum(firms), by(year naics4)
 
 *1.4: restrict the sample to only firms age zero (startups)
